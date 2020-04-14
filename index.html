@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.371af2c05807a31afcdd.css">
+    <link rel="shortcut icon" href="./images/favicon.2bcc7636052ba7932ad1b94361d45fb0.ico"  type="image/x-icon">
+    <title>Диплом</title>
+</head>
+<body>
+    <div class="popup">
+        <form class="popup__container" id="authPopup">
+            <div class="popup__close" id="authClose"></div>
+            <h2 class="popup__title">Зарегистрироваться</h2>
+            <div class="popup__block">
+                <h4 class="popup__input-name">Email</h4>
+                <input type="email" placeholder="Ведите вашу почту" inputmode="text" class="popup__input">
+                <span class="popup__input-error visibility">Ошибка</span>
+            </div>
+            <div class="popup__block">
+                <h4 class="popup__input-name">Пароль</h4>
+                <input type="password" placeholder="Ведите пароль" class="popup__input">
+                <span class="popup__input-error">Ошибка</span>
+            </div>
+            <div class="popup__block">
+                <h4 class="popup__input-name">Имя</h4>
+                <input type="text" minlength="2" maxlength="30" placeholder="Ведите свое имя" class="popup__input">
+                <span class="popup__input-error">Ошибка</span>
+            </div>
+            <span class="popup__input-error popup__input-error_server_message">Пользователь с такой почтой уже существует</span>
+            <button type="submit" class="popup__button popup__button_color_gray text" disabled>Зарегистрироваться</button>
+        </form>
+    </div>   
+    <div class="page">
+        <div class="fon">
+            <header class="header">
+                <div class="header__big-container">
+                    <h2 class="header__title text_color_white">NewsExplorer</h2>
+                    <div class="header__close-menu"></div>
+                    <div class="header__menu header__menu_theme_home"></div>
+                    <nav class="header__container">
+                        <a href="#" class="header__container-title header__container-title_border_white text text_color_white">Главная</a>
+                        <a href="./office.html" class="header__container-title text text_color_gray">Сохраненные страницы</a>
+                        <button type="button" id="authButton" class="header__button header__button_border_white text text_color_white">Авторизироваться</button>
+                        <button type="button" class="header__button header__button_border_white empty">
+                            <span class="text text_color_white">Грета</span>
+                            <img src="./images/logout.f67f251af479ba5f3f5a099a913f6b4d.svg" alt="logout" class="header__icon">
+                        </button>
+                    </nav>
+                </div>
+            </header>
+            <section class="search">
+                <div class="search__container">
+                    <h1 class="search__title">Что в мире творится?</h1>
+                    <p class="search__description text text_color_white">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+                    <form class="search__form">
+                       <input type="text" placeholder="Введите тему новости" class="search__input">
+                       <button type="submit" class="search__button text text_color_white">Искать</button> 
+                    </form>
+                </div>
+            </section>
+        </div> 
+        <main class="main">
+            <section class="about">
+                <div class="about__block">
+                    <picture class="about__image">
+                        <source srcset="./images/foto-2.9849f7c228987327dcb067dc8254835b.jpg" media="(max-width: 1100px)">
+                        <source srcset="./images/foto-3.ffb6256b5feca1141c1bc986c65b8f71.jpg" media="(max-width: 768px)">
+                        <img src="./images/foto.6b6943b65a1516b695bb7db424d94eae.jpg" alt="фотография автора">
+                    </picture>
+                    <div class="about__container">
+                        <h2 class="about__title">Об авторе</h2>
+                        <p class="about__description text text_color_black">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+                        <p class="about__description text text_color_black">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+                    </div>
+                </div>    
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <p class="footer__copyright">© 2020 Supersite, Powered by News API</p>
+                <div class="footer__mini-container">
+                    <ul class="footer__block">
+                        <li class="text text_color_black">
+                            <a href="#" class="link">Главная</a>
+                        </li>
+                        <li class="text text_color_black">
+                            <a href="https://praktikum.yandex.ru/" target="_blank" class="link">Яндекс.Практикум</a>
+                        </li>
+                    </ul>    
+                    <div class="footer__social-block">
+                        <a href="https://github.com/igrek83" target="_blank" class="link">
+                            <img src="./images/github.83769ea3238335cb0668b20bc6e40f52.svg" alt="github" class="footer__social-icon">
+                        </a>
+                        <a href="#" target="_blank" class="link">
+                            <img src="./images/fb.d5fb889419f1ed991e5009f08d2c5254.svg" alt="fasebook" class="footer__social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="main.0231adcfbf833cb4a864.js"></script>
+</body>
+</html>
