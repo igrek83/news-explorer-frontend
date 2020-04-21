@@ -1,0 +1,16 @@
+.search__description {
+  width: 545px;
+  margin-bottom: 65px;
+}
+@media all and (max-width: 768px) {
+  .search__description {
+    width: 448px;
+    margin-bottom: 48px;
+  }
+}
+@media all and (max-width: 500px) {
+  .search__description {
+    width: 288px;
+    margin-bottom: 120px;
+  }
+}

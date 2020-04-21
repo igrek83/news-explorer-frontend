@@ -1,0 +1,11 @@
+.result__item-del {
+  width: 18px;
+  height: 20px;
+  background-size: cover;
+  cursor: pointer;
+  opacity: .4;
+  background-image: url(../../../../../../../../../images/del.svg);
+}
+.result__item-del:hover {
+  opacity: 1;
+}

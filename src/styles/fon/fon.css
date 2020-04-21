@@ -1,0 +1,13 @@
+.fon {
+  width: 100%;
+  background-image: url('../../images/fon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+@media all and (max-width: 440px) {
+  .fon {
+    background-image: url('../../images/mobile-fon.png');
+  }
+}

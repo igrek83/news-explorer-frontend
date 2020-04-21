@@ -1,0 +1,12 @@
+.popup__link {
+  text-decoration: none;
+  color: #347eff;
+  cursor: pointer;
+  align-self: flex-start;
+}
+.popup__link:hover {
+  opacity: .7;
+}
+.popup__link:visited {
+  color: #347eff;
+}

@@ -1,0 +1,19 @@
+.result__button {
+  width: 288px;
+  height: 64px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 80px;
+  border: none;
+}
+@media all and (max-width: 768px) {
+  .result__button {
+    width: 240px;
+    height: 56px;
+  }
+}
+@media all and (max-width: 430px) {
+  .result__button {
+    width: 288px;
+  }
+}

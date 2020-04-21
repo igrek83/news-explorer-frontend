@@ -1,0 +1,8 @@
+@media all and (max-width: 650px) {
+  .header__close-menu_color_black {
+    border-top: 5px solid #000;
+  }
+  .header__close-menu_color_black::after {
+    border-top: 5px solid #000;
+  }
+}

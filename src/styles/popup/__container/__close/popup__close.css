@@ -1,0 +1,33 @@
+.popup__close {
+  align-self: flex-end;
+  display:  block;
+  cursor: pointer;
+  width: 30px;
+  border-top: 5px solid #fff;
+  transform: rotate(45deg);
+  position: relative;
+  top: -65px;
+  right: -75px;
+  outline: none;
+}
+.popup__close::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  border-top: 5px solid #fff;
+  transform: rotate(90deg);
+  top: -5px;
+}
+.popup__close:hover {
+  opacity: .8;
+}
+@media all and (max-width: 540px) {
+  .popup__close {
+    border-top-color: #000;
+    top: 18px;
+    right: 0;
+  }
+  .popup__close::after {
+    border-top-color: #000;
+  }
+}

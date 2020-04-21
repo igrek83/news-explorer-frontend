@@ -1,0 +1,17 @@
+@import url(./__big-container/header__big-container.css);
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 2px;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+@media all and (max-width: 650px) {
+  .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+  }
+}

@@ -1,0 +1,5 @@
+@media all and (max-width: 650px) {
+  .header__container_color_black {
+    background-color: #000;
+  }
+}

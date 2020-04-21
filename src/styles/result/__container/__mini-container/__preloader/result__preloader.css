@@ -1,0 +1,21 @@
+@keyframes preloader {
+  0%   {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+.result__preloader {
+  display: block;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  border: 4px solid;
+  border-left-color: rgb(212, 210, 210, .5);
+  border-bottom-color: rgb(212, 210, 210, .6);
+  border-right-color: rgb(212, 210, 210, .7);
+  border-top-color: rgb(212, 210, 210, .8);
+  animation: preloader 0.75s infinite;
+  margin-bottom: 1.5rem;
+}

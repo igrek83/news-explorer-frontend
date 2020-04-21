@@ -1,0 +1,26 @@
+.header__button {
+  display: none;
+  justify-content: space-between;
+  min-width: 102px;
+  height: 48px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 15px;
+  align-items: center;
+}
+.header__button:hover {
+  opacity: .8;
+}
+@media all and (max-width: 650px) {
+  .header__button {
+    justify-content: center;
+    width: 50%;
+    height: 56px;
+  }
+}
+@media all and (max-width: 430px) {
+  .header__button {
+    width: 100%;
+    height: 56px;
+  }
+}

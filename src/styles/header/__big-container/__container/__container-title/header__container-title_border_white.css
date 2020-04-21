@@ -1,0 +1,10 @@
+.header__container-title_border_white {
+  border-bottom: 3px solid #fff;
+  padding-bottom: 23px;
+}
+@media all and (max-width: 650px) {
+  .header__container-title_border_white {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}

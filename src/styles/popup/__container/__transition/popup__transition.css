@@ -1,0 +1,9 @@
+.popup__transition {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  font-style: normal;
+  color: #1a1b22;
+  align-self: center;
+}

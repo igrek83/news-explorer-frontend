@@ -1,0 +1,21 @@
+@import url(./__copyright/footer__copyright.css);
+@import url(./__mini-container/footer__mini-container.css);
+.footer__container {
+  width: 85.4%;
+  display: flex;
+}
+@media all and (max-width: 840px) {
+  .footer__container {
+    width: 89%;
+  }
+}
+@media all and (max-width: 760px) {
+  .footer__container {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 360px) {
+  .footer__container {
+    width: 92%;
+  }
+}

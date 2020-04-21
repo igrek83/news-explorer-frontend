@@ -1,0 +1,20 @@
+@import url(./__item-save/result__item-save.css);
+@import url(./__item-save/result__item-save_theme_inaktive.css);
+@import url(./__item-save/result__item-save_theme_aktive.css);
+@import url(./__item-del/result__item-del.css);
+.result__figure-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+.result__figure-container:hover+.result__hint {
+  visibility: visible;
+}
+.result__figure-container:hover>.result__item-save_theme_inaktive {
+  opacity: 1;
+}

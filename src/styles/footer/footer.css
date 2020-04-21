@@ -1,0 +1,9 @@
+@import url(./__container/footer__container.css);
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding-top: 28px;
+  padding-bottom: 25px;
+}

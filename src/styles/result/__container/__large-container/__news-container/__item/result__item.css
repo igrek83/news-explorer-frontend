@@ -1,0 +1,10 @@
+@import url(./__item-header/result__item-header.css);
+@import url(./__item-footer/result__item-footer.css);
+.result__item {
+  min-width: 224px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 16px;
+}
