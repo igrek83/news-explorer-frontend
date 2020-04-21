@@ -77,7 +77,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             inject: false,
-            template: './src/pages/index.html',
+            template: './src/index.html',
             filename: './index.html',
         }),
         new HtmlWebpackPlugin({
