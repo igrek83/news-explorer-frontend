@@ -1,4 +1,4 @@
-import "../index.css";
+import "../pages/index.css";
 
 function z(event) {
   const x = event.target;

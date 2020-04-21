@@ -4,7 +4,7 @@
   background-size: cover;
   cursor: pointer;
   opacity: .4;
-  background-image: url(../../../../../../../../../images/del.svg);
+  background-image: url(~images/del.svg);
 }
 .result__item-del:hover {
   opacity: 1;

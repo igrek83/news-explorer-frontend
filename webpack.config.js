@@ -15,11 +15,9 @@ module.exports = {
     },
     resolve: {
         alias: {
-          src: path.resolve(__dirname, 'src/'),
           images: path.resolve(__dirname, 'src/images/'),
-          vendor: path.resolve(__dirname, 'src/vendor/'),
         },
-    },    
+      },
     module: {
         rules: [{
             test: /\.js$/,
@@ -41,7 +39,7 @@ module.exports = {
         {
             test: /\.(gif|png|jpe?g|ico|svg)$/i,
             use: [
-                "file-loader?name=./images/[name].[hash].[ext]&publicPath=../",
+                "file-loader?name=./images/[name].[hash].[ext]",
                 {
                     loader: 'image-webpack-loader',
                     options: {
@@ -77,7 +75,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             inject: false,
-            template: './src/index.html',
+            template: './src/pages/index.html',
             filename: './index.html',
         }),
         new HtmlWebpackPlugin({
