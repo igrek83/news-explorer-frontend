@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="desciption" content="News Explorer - поиск новостей по агрегаторам новостей в Интернет-СМИ">
     <meta name="author" content="Игорь Голанов">
-    <link rel="stylesheet" href="main/main.179d635965ed60a0682e.css">
+    <link rel="stylesheet" href="main/main.72d8864102637fa23cbb.css">
     <link rel="shortcut icon" href="./images/favicon.2bcc7636052ba7932ad1b94361d45fb0.ico" type="image/x-icon">
     <title>Диплом</title>
 </head>
 <body>
     <div class="page">
         <div class="popup">
-            <form class="popup__container" id="authPopup" novalidate>
+            <form class="popup__container" name="auth" id="authPopup" novalidate>
                 <div class="popup__close" id="authClose"></div>
                 <h2 class="popup__title">Зарегистрироваться</h2>
                 <div class="popup__block">
@@ -36,7 +36,7 @@
                 <button type="submit" id="authSubmitButton" class="button button_color_gray popup__button text" disabled>Зарегистрироваться</button>
                 <span class="popup__transition">Или <span id="autharizationButton" class="popup__link">Войти</span></span>
             </form>
-            <form class="popup__container" id="autharizationPopup" novalidate>
+            <form class="popup__container" name="autharization" id="autharizationPopup" novalidate>
                 <div class="popup__close" id="autharizationClose"></div>
                 <h2 class="popup__title">Вход</h2>
                 <div class="popup__block">  
@@ -84,8 +84,8 @@
                 <div class="search__container">
                     <h1 class="search__title">Что в мире творится?</h1>
                     <p class="search__description text text_color_white">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
-                    <form class="search__form" novalidate>
-                       <input type="text" placeholder="Введите тему новости" minlength="2" class="search__input" required>
+                    <form name="search" class="search__form" novalidate>
+                       <input name="searchNews" id="searchInput" type="text" placeholder="Введите тему новости" minlength="2" class="search__input" required>
                        <button type="submit" class="button button_color_gray search__button text" disabled>Искать</button>
                     </form>
                 </div>
@@ -94,11 +94,11 @@
         <main class="main">
             <section class="result">
                 <div class="result__container">
-                    <div class="result__mini-container">
+                    <div id="preloader" class="result__mini-container">
                         <div class="result__preloader"></div>
                         <span class="text text_color_gray">Идет поиск новостей...</span>
                     </div>
-                    <div class="result__mini-container">
+                    <div id="notFoundResult" class="result__mini-container">
                         <svg width="96" height="96" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="43" cy="43" r="36.5" stroke="#D1D2D6"/>
                             <path d="M69 69l19.5 19.5M58.328 55.959c-3.667-4.261-9.1-6.96-15.164-6.96-6.063 0-11.496 2.699-15.164 6.96" stroke="#D1D2D6"/>
@@ -107,84 +107,12 @@
                         <span class="result__error">Ничего не найдено</span>
                         <span class="text text_color_gray">К сожалению по вашему запросу ничего не найдено.</span>
                     </div>
+                    <div id="cathResult" class="result__mini-container">
+                        <span class="text text_color_gray">Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз».</span>
+                    </div>
                     <div class="result__large-container">
                         <h2 class="result__title">Результаты поиска</h2>
                         <div class="result__news-container">
-                            <div class="result__item">
-                                <div class="result__item-header">
-                                    <div class="result__figure-container">
-                                        <div class="result__item-save result__item-save_theme_inaktive"></div>
-                                    </div>
-                                    <span class="result__hint">Войдите, чтобы сохранять статьи</span>
-                                </div>
-                                <div class="result__item-footer">
-                                    <span class="result__date">2 августа, 2019</span>
-                                    <div class="result__block">
-                                        <h3 class="result__item-title">Национальное достояние – парки</h3>
-                                        <p class="result__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала 
-                                            складываться система национальных парков – охраняемых территорий, где и сегодня каждый может 
-                                            приобщиться к природе.
-                                        </p>
-                                    </div>
-                                    <span class="result__source">ЛЕНТА.РУ</span>
-                                </div>
-                            </div>
-                            <div class="result__item">
-                                <div class="result__item-header">
-                                    <div class="result__figure-container">
-                                        <div class="result__item-save result__item-save_theme_inaktive"></div>
-                                    </div>
-                                    <span class="result__hint">Войдите, чтобы сохранять статьи</span>
-                                </div>
-                                <div class="result__item-footer">
-                                    <span class="result__date">2 августа, 2019</span>
-                                    <div class="result__block">
-                                        <h3 class="result__item-title">Лесные огоньки: история одной фотографии</h3>
-                                        <p class="result__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
-                                            чтобы запечатлеть ускользающую красоту одного из местных чудес природы.
-                                        </p>
-                                    </div>
-                                    <span class="result__source">Медуза</span>
-                                </div>
-                            </div>
-                            <div class="result__item">
-                                <div class="result__item-header">
-                                    <div class="result__figure-container">
-                                        <div class="result__item-save result__item-save_theme_inaktive"></div>
-                                    </div>
-                                    <span class="result__hint">Войдите, чтобы сохранять статьи</span>
-                                </div>
-                                <div class="result__item-footer">
-                                    <span class="result__date">2 августа, 2019</span>
-                                    <div class="result__block">
-                                        <h3 class="result__item-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-                                        <p class="result__text">Знаменитый фотограф снимает первозданные леса России, 
-                                            чтобы рассказать о необходимости их сохранения. В этот раз он отправился 
-                                            в Двинско-Пинежскую тайгу, где что то где то там
-                                        </p>
-                                    </div>
-                                    <span class="result__source">РИА</span>
-                                </div>
-                            </div>
-                            <div class="result__item">
-                                <div class="result__item-header">
-                                    <div class="result__figure-container">
-                                        <div class="result__item-save result__item-save_theme_inaktive"></div>
-                                    </div>
-                                    <span class="result__hint">Войдите, чтобы сохранять статьи</span>
-                                </div>
-                                <div class="result__item-footer">
-                                    <span class="result__date">2 августа, 2019</span>
-                                    <div class="result__block">
-                                        <h3 class="result__item-title">Национальное достояние – парки</h3>
-                                        <p class="result__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь 
-                                            начала складываться система национальных парков – охраняемых территорий, где и 
-                                            сегодня каждый может приобщиться к природе.
-                                        </p>
-                                    </div>
-                                    <span class="result__source">ЛЕНТА.РУ</span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <button type="button" class="result__button text text_color_black">Показать еще</button>
@@ -235,6 +163,6 @@
             </div>
         </footer>
     </div>
-    <script src="main/maindd480aadb4cc436d773c.js"></script>
+    <script src="main/main27d4a6683f01a70b820b.js"></script>
 </body>
 </html>
