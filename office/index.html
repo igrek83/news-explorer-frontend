@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="desciption" content="News Explorer - поиск новостей по агрегаторам новостей в Интернет-СМИ. Личный кабинет">
     <meta name="author" content="Игорь Голанов">
-    <link rel="stylesheet" href="../office/office.b3b87d3bee7cb3d3d217.css">
-    <link rel="shortcut icon" href="./images/favicon.2bcc7636052ba7932ad1b94361d45fb0.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../office/office.6b478b3c737aaaeb5c66.css">
+    <link rel="shortcut icon" href="../images/favicon.2bcc7636052ba7932ad1b94361d45fb0.ico" type="image/x-icon">
     <title>Диплом</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
                     <a href="../index.html" class="header__container-title text text_color_gray-black">Главная</a>
                     <a href="#" class="header__container-title  header__container-title_border_black text text_color_black">Сохраненные страницы</a>
                     <button type="button" class="button button_border_black header__button is-opened">
-                        <span class="text text_color_black">Грета</span>
+                        <span id="userName" class="text text_color_black"></span>
                         <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" 
                             d="M10 6H6v12h4v2H6a2 2 0 01-2-2V6a2 2 0 012-2h4v2zm7.586 7l-4.293 4.134 1.414 1.362 6.707-6.459-6.707-6.459-1.414 1.362 4.293 4.134H8V13h9.586z" 
@@ -31,114 +31,15 @@
                 </nav>
             </div>
         </header>
-        <main class="result">
+        <main class="result is-opened">
             <div class="result__office-block">
                 <span class="result__span">Сохраненные страницы</span>
-                <h2 class="result__title result__title_for_office">Грета, у вас 5 сохранённых статей</h2>
-                <span class="result__span-key">По ключевым словам: <span class="result__text-bold">Природа, Тайга и 2 другим</span></span>
+                <h2 id="articlesSumma" class="result__title result__title_for_office"></h2>
+                <span class="result__span-key">По ключевым словам: <span class="result__text-bold"></span></span>
             </div>
             <div class="result__container">
-                <div class="result__large-container">
-                    <div class="result__news-container">
-                        <div class="result__item">
-                            <div class="result__item-header">
-                                <span class="result__key">Природа</span>
-                                <div class="result__figure-container">
-                                    <div class="result__item-del"></div>
-                                </div>
-                                <span class="result__hint">Убрать из сохраненных</span>
-                            </div>
-                            <div class="result__item-footer">
-                                <span class="result__date">2 августа, 2019</span>
-                                <div class="result__block">
-                                    <h3 class="result__item-title">Национальное достояние – парки</h3>
-                                    <p class="result__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала 
-                                        складываться система национальных парков – охраняемых территорий, где и сегодня каждый может 
-                                        приобщиться к природе.
-                                    </p>
-                                </div>
-                                <span class="result__source">ЛЕНТА.РУ</span>
-                            </div>
-                        </div>
-                        <div class="result__item">
-                            <div class="result__item-header">
-                                <span class="result__key">Природа</span>
-                                <div class="result__figure-container">
-                                    <div class="result__item-del"></div>
-                                </div>
-                                <span class="result__hint">Убрать из сохраненных</span>
-                            </div>
-                            <div class="result__item-footer">
-                                <span class="result__date">2 августа, 2019</span>
-                                <div class="result__block">
-                                    <h3 class="result__item-title">Лесные огоньки: история одной фотографии</h3>
-                                    <p class="result__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
-                                        чтобы запечатлеть ускользающую красоту одного из местных чудес природы.
-                                    </p>
-                                </div>
-                                <span class="result__source">Медуза</span>
-                            </div>
-                        </div>
-                        <div class="result__item">
-                            <div class="result__item-header">
-                                <span class="result__key">Тайга</span>
-                                <div class="result__figure-container">
-                                    <div class="result__item-del"></div>
-                                </div>
-                                <span class="result__hint">Убрать из сохраненных</span>
-                            </div>
-                            <div class="result__item-footer">
-                                <span class="result__date">2 августа, 2019</span>
-                                <div class="result__block">
-                                    <h3 class="result__item-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-                                    <p class="result__text">Знаменитый фотограф снимает первозданные леса России, 
-                                        чтобы рассказать о необходимости их сохранения. В этот раз он отправился 
-                                        в Двинско-Пинежскую тайгу, где что то где то там
-                                    </p>
-                                </div>
-                                <span class="result__source">РИА</span>
-                            </div>
-                        </div>
-                        <div class="result__item">
-                            <div class="result__item-header">
-                                <span class="result__key">Природа</span>
-                                <div class="result__figure-container">
-                                    <div class="result__item-del"></div>
-                                </div>
-                                <span class="result__hint">Убрать из сохраненных</span>
-                            </div>
-                            <div class="result__item-footer">
-                                <span class="result__date">2 августа, 2019</span>
-                                <div class="result__block">
-                                    <h3 class="result__item-title">Национальное достояние – парки</h3>
-                                    <p class="result__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь 
-                                        начала складываться система национальных парков – охраняемых территорий, где и 
-                                        сегодня каждый может приобщиться к природе.
-                                    </p>
-                                </div>
-                                <span class="result__source">ЛЕНТА.РУ</span>
-                            </div>
-                        </div>
-                        <div class="result__item">
-                            <div class="result__item-header">
-                                <span class="result__key">Природа</span>
-                                <div class="result__figure-container">
-                                    <div class="result__item-del"></div>
-                                </div>
-                                <span class="result__hint">Убрать из сохраненных</span>
-                            </div>
-                            <div class="result__item-footer">
-                                <span class="result__date">2 августа, 2019</span>
-                                <div class="result__block">
-                                    <h3 class="result__item-title">Национальное достояние – парки</h3>
-                                    <p class="result__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь 
-                                        начала складываться система национальных парков – охраняемых территорий, где и 
-                                        сегодня каждый может приобщиться к природе.
-                                    </p>
-                                </div>
-                                <span class="result__source">ЛЕНТА.РУ</span>
-                            </div>
-                        </div>
+                <div class="result__large-container is-opened">
+                    <div class="result__news-container">               
                     </div>
                 </div>
             </div>
@@ -157,16 +58,16 @@
                     </ul>    
                     <div class="footer__social-block">
                         <a href="https://github.com/igrek83" target="_blank" class="link">
-                            <img src="./images/github.83769ea3238335cb0668b20bc6e40f52.svg" alt="github" class="footer__social-icon">
+                            <img src="../images/github.83769ea3238335cb0668b20bc6e40f52.svg" alt="github" class="footer__social-icon">
                         </a>
                         <a href="https://ru-ru.facebook.com/" target="_blank" class="link">
-                            <img src="./images/fb.d5fb889419f1ed991e5009f08d2c5254.svg" alt="facebook" class="footer__social-icon">
+                            <img src="../images/fb.d5fb889419f1ed991e5009f08d2c5254.svg" alt="facebook" class="footer__social-icon">
                         </a>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
-    <script src="../office/office2167fb0c2a1968f33f2b.js"></script>
+    <script src="../office/officea27584ec8932020ae4c5.js"></script>
 </body>
 </html>

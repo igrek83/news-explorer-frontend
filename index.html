@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="desciption" content="News Explorer - поиск новостей по агрегаторам новостей в Интернет-СМИ">
     <meta name="author" content="Игорь Голанов">
-    <link rel="stylesheet" href="main/main.72d8864102637fa23cbb.css">
+    <link rel="stylesheet" href="main/main.4eea016174341f9a79d8.css">
     <link rel="shortcut icon" href="./images/favicon.2bcc7636052ba7932ad1b94361d45fb0.ico" type="image/x-icon">
     <title>Диплом</title>
 </head>
@@ -15,21 +15,21 @@
     <div class="page">
         <div class="popup">
             <form class="popup__container" name="auth" id="authPopup" novalidate>
-                <div class="popup__close" id="authClose"></div>
+                <div class="popup__close"></div>
                 <h2 class="popup__title">Зарегистрироваться</h2>
                 <div class="popup__block">
                     <h4 class="popup__input-name">Email</h4>
-                    <input type="email" placeholder="Ведите вашу почту" id="regEmailInput" class="popup__input" required>
+                    <input type="email" placeholder="Ведите вашу почту" name="regEmailInput" id="regEmailInput" class="popup__input" required>
                     <span class="popup__input-error"></span>
                 </div>
                 <div class="popup__block">
                     <h4 class="popup__input-name">Пароль</h4>
-                    <input type="password" minlength="8" maxlength="30" placeholder="Ведите пароль" id="regPassInput" class="popup__input" required>
+                    <input type="password" minlength="8" maxlength="30" placeholder="Ведите пароль" name="regPassInput" id="regPassInput" class="popup__input" required>
                     <span class="popup__input-error"></span>
                 </div>
                 <div class="popup__block">
                     <h4 class="popup__input-name">Имя</h4>
-                    <input type="text" minlength="2" maxlength="30" placeholder="Ведите свое имя" id="regNameInput" class="popup__input" required>
+                    <input type="text" minlength="2" maxlength="30" placeholder="Ведите свое имя" name="regNameInput" id="regNameInput" class="popup__input" required>
                     <span class="popup__input-error"></span>
                 </div>
                 <span class="popup__input-error popup__input-error_server_message visibility">Пользователь с такой почтой уже существует</span>
@@ -37,16 +37,16 @@
                 <span class="popup__transition">Или <span id="autharizationButton" class="popup__link">Войти</span></span>
             </form>
             <form class="popup__container" name="autharization" id="autharizationPopup" novalidate>
-                <div class="popup__close" id="autharizationClose"></div>
+                <div class="popup__close"></div>
                 <h2 class="popup__title">Вход</h2>
                 <div class="popup__block">  
                     <h4 class="popup__input-name">Email</h4>
-                    <input type="email" placeholder="Ведите вашу почту" id="autharizationEmailInput" class="popup__input" required>
+                    <input type="email" placeholder="Ведите вашу почту" name="autharizationEmailInput" id="autharizationEmailInput" class="popup__input" required>
                     <span class="popup__input-error visibility"></span>
                 </div>
                 <div class="popup__block">
                     <h4 class="popup__input-name">Пароль</h4>
-                    <input type="password" minlength="8" maxlength="30" placeholder="Ведите пароль" id="autharizationPassInput" class="popup__input" required>
+                    <input type="password" minlength="8" maxlength="30" placeholder="Ведите пароль" name="autharizationPassInput" id="autharizationPassInput" class="popup__input" required>
                     <span class="popup__input-error"></span>
                 </div>
                 <span class="popup__input-error popup__input-error_server_message visibility">Неправильные почта или пароль</span>
@@ -54,9 +54,9 @@
                 <span class="popup__transition">Или <span id="secondAuthButton" class="popup__link">Зарегистрироваться</span></span>
             </form>
             <div class="popup__container" id="miniPopup">
-                <div class="popup__close" id="closeMiniPopup"></div>
+                <div class="popup__close"></div>
                 <h2 class="popup__title">Пользователь успешно зарегистрирован!</h2>
-                <span class="popup__transition popup__link">Выполнить вход</span>
+                <span id="autharizationButton" class="popup__transition popup__link">Выполнить вход</span>
             </div>
         </div>
         <div class="fon">
@@ -67,10 +67,10 @@
                     <div class="header__menu header__menu_theme_home"></div>
                     <nav class="header__container header__container_color_black">
                         <a href="#" class="header__container-title header__container-title_border_white text text_color_white">Главная</a>
-                        <a href="./office" class="header__container-title text text_color_gray-white">Сохраненные страницы</a>
+                        <a href="./office" id="saveArticles" class="header__container-title text text_color_gray-white is-closed">Сохраненные страницы</a>
                         <button type="button" id="authButton" class="button button_border_white header__button text text_color_white is-opened">Авторизироваться</button>
-                        <button type="button" class="button button_border_white header__button">
-                            <span class="text text_color_white">Грета</span>
+                        <button type="button" id="outputButton" class="button button_border_white header__button">
+                            <span id="userName" class="text text_color_white"></span>
                             <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" 
                                 d="M10 6H6v12h4v2H6a2 2 0 01-2-2V6a2 2 0 012-2h4v2zm7.586 7l-4.293 4.134 1.414 1.362 6.707-6.459-6.707-6.459-1.414 1.362 4.293 4.134H8V13h9.586z" 
@@ -163,6 +163,6 @@
             </div>
         </footer>
     </div>
-    <script src="main/main27d4a6683f01a70b820b.js"></script>
+    <script src="main/maina166fbe28290fd32f807.js"></script>
 </body>
 </html>
