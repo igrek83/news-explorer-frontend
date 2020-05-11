@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -29,10 +28,10 @@
                 </div>
                 <div class="popup__block">
                     <h4 class="popup__input-name">Имя</h4>
-                    <input type="text" minlength="2" maxlength="30" placeholder="Ведите свое имя" name="regNameInput" id="regNameInput" class="popup__input" required>
+                    <input type="text" minlength="2" maxlength="20" placeholder="Ведите свое имя" name="regNameInput" id="regNameInput" class="popup__input" required>
                     <span class="popup__input-error"></span>
                 </div>
-                <span class="popup__input-error popup__input-error_server_message visibility">Пользователь с такой почтой уже существует</span>
+                <span id="authError" class="popup__input-error popup__input-error_server_message"></span>
                 <button type="submit" id="authSubmitButton" class="button button_color_gray popup__button text" disabled>Зарегистрироваться</button>
                 <span class="popup__transition">Или <span id="autharizationButton" class="popup__link">Войти</span></span>
             </form>
@@ -49,14 +48,14 @@
                     <input type="password" minlength="8" maxlength="30" placeholder="Ведите пароль" name="autharizationPassInput" id="autharizationPassInput" class="popup__input" required>
                     <span class="popup__input-error"></span>
                 </div>
-                <span class="popup__input-error popup__input-error_server_message visibility">Неправильные почта или пароль</span>
+                <span id="autharizationError" class="popup__input-error popup__input-error_server_message"></span>
                 <button type="submit" id="autharizationSubmitButton" class="button button_color_gray popup__button text" disabled>Войти</button>
                 <span class="popup__transition">Или <span id="secondAuthButton" class="popup__link">Зарегистрироваться</span></span>
             </form>
             <div class="popup__container" id="miniPopup">
                 <div class="popup__close"></div>
                 <h2 class="popup__title">Пользователь успешно зарегистрирован!</h2>
-                <span id="autharizationButton" class="popup__transition popup__link">Выполнить вход</span>
+                <span id="secondAutharizationButton" class="popup__transition popup__link">Выполнить вход</span>
             </div>
         </div>
         <div class="fon">
@@ -71,7 +70,7 @@
                         <button type="button" id="authButton" class="button button_border_white header__button text text_color_white is-opened">Авторизироваться</button>
                         <button type="button" id="outputButton" class="button button_border_white header__button">
                             <span id="userName" class="text text_color_white"></span>
-                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg id="homeImage" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" 
                                 d="M10 6H6v12h4v2H6a2 2 0 01-2-2V6a2 2 0 012-2h4v2zm7.586 7l-4.293 4.134 1.414 1.362 6.707-6.459-6.707-6.459-1.414 1.362 4.293 4.134H8V13h9.586z" 
                                 fill="#fff"/>
@@ -163,6 +162,6 @@
             </div>
         </footer>
     </div>
-    <script src="main/maina166fbe28290fd32f807.js"></script>
+    <script src="main/main1054c262815d18f4ae00.js"></script>
 </body>
 </html>
