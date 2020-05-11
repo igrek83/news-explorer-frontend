@@ -1,0 +1,14 @@
+@import url(./__preloader/result__preloader.css);
+@import url(./__error/result__error.css);
+.result__mini-container {
+  width: 360px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media all and (max-width: 360px) {
+  .result__mini-container {
+    width: 95%;
+  }
+}

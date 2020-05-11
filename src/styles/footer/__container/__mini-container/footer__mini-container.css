@@ -1,0 +1,18 @@
+@import url(./__block/footer__block.css);
+@import url(./__social-block/footer__social-block.css);
+.footer__mini-container {
+  width: 393px;
+  display: flex;
+  justify-content: space-between;
+}
+@media all and (max-width: 840px) {
+  .footer__mini-container {
+    width: 350px;
+  }
+}
+@media all and (max-width: 760px) {
+  .footer__mini-container {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}

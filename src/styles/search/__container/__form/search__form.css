@@ -1,0 +1,19 @@
+@import url(./__input/search__input.css);
+@import url(./__button/search__button.css);
+.search__form {
+  width: 608px;
+  display: flex;
+  position: relative;
+}
+@media all and (max-width: 768px) {
+  .search__form {
+    width: 448px;
+  }
+}
+@media all and (max-width: 500px) {
+  .search__form {
+    width: 288px;
+    position: static;
+    flex-direction: column;
+  }
+}

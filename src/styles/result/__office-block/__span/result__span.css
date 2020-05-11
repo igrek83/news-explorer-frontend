@@ -1,0 +1,20 @@
+.result__span {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(26, 27, 34, .5);
+  margin-bottom: 28px;
+}
+@media all and (max-width: 800px) {
+  .result__span {
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+}
+@media all and (max-width: 400px) {
+  .result__span {
+    font-size: 12px;
+  }
+}

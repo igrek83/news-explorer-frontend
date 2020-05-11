@@ -1,0 +1,24 @@
+@import url(./__title/result__title.css);
+@import url(./__title/result__title_for_office.css);
+@import url(./__news-container/result__news-container.css);
+.result__large-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 85.2%;
+}
+@media all and (max-width: 840px) {
+  .result__large-container {
+    width: 89%;
+  }
+}
+@media all and (max-width: 550px) {
+  .result__large-container {
+    max-width: 420px;
+  }
+}
+@media all and (max-width: 360px) {
+  .result__large-container {
+    width: 92%;
+  }
+}

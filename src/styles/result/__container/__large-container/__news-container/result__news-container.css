@@ -1,0 +1,29 @@
+@import url(./__item/result__item.css);
+.result__news-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+@media all and (max-width: 920px) {
+  .result__news-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media all and (max-width: 840px) {
+  .result__news-container {
+    grid-gap: .5rem;
+    margin-bottom: 2rem;
+  }
+}
+@media all and (max-width: 550px) {
+  .result__news-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (max-width: 360px) {
+  .result__news-container {
+    margin-bottom: 1rem;
+  }
+}

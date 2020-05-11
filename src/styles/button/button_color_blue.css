@@ -1,0 +1,10 @@
+.button_color_blue {
+  background-color: #2f71e5;
+  color: #fff;
+}
+.button_color_blue:hover {
+  background-color: #347eff;
+}
+.button_color_blue:active {
+  background-color: #2a65cc;
+}

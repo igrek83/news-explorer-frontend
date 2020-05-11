@@ -1,0 +1,12 @@
+.text_color_gray-black {
+  color: #000;
+  opacity: .5;
+}
+.text_color_gray-white:hover {
+  opacity: 1;
+}
+@media all and (max-width: 630px) {
+.text_color_gray-white {
+  opacity: 1;
+  }
+}

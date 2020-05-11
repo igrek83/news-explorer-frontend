@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="desciption" content="News Explorer - поиск новостей по агрегаторам новостей в Интернет-СМИ. Личный кабинет">
+    <meta name="author" content="Игорь Голанов">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.office.css %>">
+    <link rel="shortcut icon" href="<%=require(`../../images/favicon.ico`).default%>" type="image/x-icon">
+    <title>Диплом</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header header_for_office">
+            <div class="header__big-container">
+                <h2 class="header__title text_color_black">NewsExplorer</h2>
+                <div class="header__close-menu header__close-menu_color_black"></div>
+                <div class="header__menu header__menu_theme_office"></div>
+                <nav class="header__container header__container_color_gray">
+                    <a href="../index.html" class="header__container-title text text_color_gray-black">Главная</a>
+                    <a href="#" class="header__container-title  header__container-title_border_black text text_color_black">Сохраненные страницы</a>
+                    <button type="button" id="officeOutputButton" class="button button_border_black header__button is-opened">
+                        <span id="userName" class="text text_color_black"></span>
+                        <svg id="officeImage" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" 
+                            d="M10 6H6v12h4v2H6a2 2 0 01-2-2V6a2 2 0 012-2h4v2zm7.586 7l-4.293 4.134 1.414 1.362 6.707-6.459-6.707-6.459-1.414 1.362 4.293 4.134H8V13h9.586z" 
+                            fill="#000"/>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <main class="result is-opened">
+            <div class="result__office-block">
+                <span class="result__span">Сохраненные страницы</span>
+                <h2 id="articlesSumma" class="result__title result__title_for_office"></h2>
+                <span class="result__span-key">По ключевым словам: <span class="result__text-bold"></span></span>
+            </div>
+            <div class="result__container">
+                <div class="result__large-container is-opened">
+                    <div class="result__news-container">               
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <p class="footer__copyright">© 2020 Supersite, Powered by News API</p>
+                <div class="footer__mini-container">
+                    <ul class="footer__block">
+                        <li class="text text_color_black">
+                            <a href="../index.html" class="link">Главная</a>
+                        </li>
+                        <li class="text text_color_black">
+                            <a href="https://praktikum.yandex.ru/" rel="noopener" target="_blank" class="link">Яндекс.Практикум</a>
+                        </li>
+                    </ul>    
+                    <div class="footer__social-block">
+                        <a href="https://github.com/igrek83" rel="noopener" target="_blank" class="link">
+                            <img src="<%=require(`../../images/github.svg`).default%>" alt="github" class="footer__social-icon">
+                        </a>
+                        <a href="https://ru-ru.facebook.com/" rel="noopener" target="_blank" class="link">
+                            <img src="<%=require(`../../images/fb.svg`).default%>" alt="facebook" class="footer__social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="<%= htmlWebpackPlugin.files.chunks.office.entry %>"></script>
+</body>
+</html>

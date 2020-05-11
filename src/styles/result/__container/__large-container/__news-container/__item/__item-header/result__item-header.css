@@ -1,0 +1,23 @@
+@import url(./__figure-container/result__figure-container.css);
+@import url(./__hint/result__hint.css);
+@import url(./__key/result__key.css);
+.result__item-header {
+  width: 100%;
+  position: relative;
+  display: flex;
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 24px 24px 68%;
+}
+@media all and (max-width: 970px) {
+  .result__item-header {
+    padding: 8px 8px 67%;
+  }
+}
+@media all and (max-width: 430px) {
+  .result__item-header {
+    padding: 16px 16px 68%;
+  }
+}

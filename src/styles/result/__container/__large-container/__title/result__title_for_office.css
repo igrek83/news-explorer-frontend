@@ -1,0 +1,8 @@
+.result__title_for_office {
+  margin-bottom: 2rem;
+}
+@media all and (max-width: 800px) {
+  .result__title_for_office {
+    margin-bottom: 1rem;
+  }
+}

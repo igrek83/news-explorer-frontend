@@ -1,0 +1,30 @@
+.result__item-save_theme_inaktive {
+  display: block;
+  position: relative;
+  width: 18px;
+  height: 22px;
+  border: 2px solid #1a1b22;
+  opacity: .4;
+  border-bottom: none;
+}
+.result__item-save_theme_inaktive::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -2px;
+  width: 11px;
+  border-bottom: 2px solid #1a1b22;
+  transform: rotate(-40deg);
+}
+.result__item-save_theme_inaktive::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  left: 6px;
+  top: 15px;
+  border-bottom: 2px solid #1a1b22;
+  transform: rotate(40deg);
+}
+.result__item-save_theme_inaktive:hover {
+  opacity: 1;
+}

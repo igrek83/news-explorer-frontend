@@ -1,0 +1,7 @@
+@import url(./__title/search__title.css);
+@import url(./__description/search__description.css);
+@import url(./__form/search__form.css);
+.search__container {
+  display: flex;
+  flex-direction: column;
+}

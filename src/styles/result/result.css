@@ -1,0 +1,10 @@
+@import url(./__container/result__container.css);
+@import url(./__office-block/result__office-block.css);
+.result {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  align-items: center;
+}

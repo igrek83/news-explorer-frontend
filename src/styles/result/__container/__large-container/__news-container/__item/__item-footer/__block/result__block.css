@@ -1,0 +1,9 @@
+@import url(./__item-title/result__item-title.css);
+@import url(./__text/result__text.css);
+.result__block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  height: 194px;
+}
