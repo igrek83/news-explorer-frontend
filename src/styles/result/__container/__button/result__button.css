@@ -1,4 +1,6 @@
 .result__button {
+  display: none;
+  justify-content: center;
   width: 288px;
   height: 64px;
   cursor: pointer;
