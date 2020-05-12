@@ -5,8 +5,6 @@ export default class RenderHeader extends BaseComponent {
   constructor(button) {
     super();
     this.button = button;
-    this.array = [];
-    this.result = [];
     this._setHandlers([
       {
         element: this.button,

@@ -12,11 +12,11 @@ export default class ErrorValidate {
     this.input = input;
   }
   _messageError() {
-    let element = this.input;
-    let error = element.nextElementSibling;
+    const element = this.input;
+    const error = element.nextElementSibling;
     error.classList.add('visibility');
     if(element.validity.tooShort === true) {
-      if(element === regNameInput) {
+      if(element === regNameInput || element === searchInput) {
         error.textContent = AT_LEAST_TWO_ERROR;
         return;
       }

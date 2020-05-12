@@ -1,0 +1,13 @@
+.search__error {
+  background-color: #fff;
+  border-radius: 100px;
+  margin-bottom: 5px;
+  align-self: center;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+@media all and (max-width: 500px) {
+  .search__error {
+    margin-bottom: 15px;
+  }
+}

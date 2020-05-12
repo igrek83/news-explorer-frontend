@@ -62,7 +62,10 @@ export default class Popup extends BaseComponent {
   }
   _close(event) {
     if (event.target.classList.contains('popup__close') || event.target.classList.contains('popup') || event.keyCode === 27) {
-      this.closing();
+      document.querySelector('.popup').classList.remove('is-opened');
+      document.querySelector('#authPopup').classList.remove('is-opened');
+      document.querySelector('#autharizationPopup').classList.remove('is-opened');
+      document.querySelector('#miniPopup').classList.remove('is-opened');
       resetSubmitError();
     }
   }
