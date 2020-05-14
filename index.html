@@ -80,15 +80,15 @@
                 </div>
             </header>
             <section class="search">
-                <div class="search__container">
+                <form name="search" class="search__container" novalidate>
                     <h1 class="search__title">Что в мире творится?</h1>
                     <p class="search__description text text_color_white">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
-                    <form name="search" class="search__form" novalidate>
+                    <div class="search__form">
                        <input name="searchInput" id="searchInput" type="text" placeholder="Введите тему новости" minlength="2" class="search__input" required>
                        <span class="search__error popup__input-error"></span>
                        <button type="submit" class="button button_color_gray search__button text" disabled>Искать</button>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </section>
         </div>
         <main class="main">
