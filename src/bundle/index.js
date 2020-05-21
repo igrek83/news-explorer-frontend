@@ -70,7 +70,10 @@ const secondDoublePopup = new Popup(secondAutharizationButton, miniPopup);
 const homeCardList = new HomeCardList(newsContainer);
 
 entranceHeader();
-renderHeader.renderUserName(mainApi.getUserData());
+if (localStorage.getItem('token')) {
+  renderHeader.renderUserName(mainApi.getUserData());
+}
+
 
 const auth = () => {
   event.preventDefault();
@@ -135,7 +138,7 @@ const searchNews = (event) => {
   result.delButton();
   result.preloader();
   homeCardList.deleteCards();
-  const search = searchForm.elements.searchNews;
+  const search = searchForm.elements.searchInput;
   newsApi
   .getNews(search.value)
   .then((res) => { 

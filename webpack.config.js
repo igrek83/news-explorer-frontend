@@ -37,7 +37,7 @@ module.exports = {
                 'postcss-loader'],
         },
         {
-            test: /\.(gif|png|jpe?g|ico|svg)$/i,
+            test: /\.(gif|png|jpe?g|jxr|jp2|webp|ico|svg)$/i,
             use: [
                 "file-loader?name=./images/[name].[hash].[ext]",
                 {

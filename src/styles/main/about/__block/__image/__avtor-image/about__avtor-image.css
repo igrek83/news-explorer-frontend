@@ -1,0 +1,30 @@
+.about__avtor-image {
+  width: 434px;
+  height: 434px;
+  background-size: cover;
+  border-radius: 50%;
+}
+@media all and (max-width: 1070px) {
+  .about__avtor-image {
+    width: 272px;
+    height: 272px;
+  }
+}
+@media all and (max-width: 768px) {
+  .about__avtor-image {
+    width: 434px;
+    height: 434px;
+  }
+}
+@media all and (max-width: 480px) {
+  .about__avtor-image {
+    width: 272px;
+    height: 272px;
+  }
+}
+@media all and (max-width: 360px) {
+  .about__avtor-image {
+    width: 232px;
+    height: 232px;
+  }
+}
