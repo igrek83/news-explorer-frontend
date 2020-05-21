@@ -19,7 +19,7 @@ export default class Popup extends BaseComponent {
       },
       {
         element: window,
-        event: 'mousdown',
+        event: 'mousedown',
         callback: this._close,
       },
       {

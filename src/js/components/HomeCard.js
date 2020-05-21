@@ -13,7 +13,6 @@ export default class HomeCard extends Card{
       title,
       description,
       source } = article;
-    const container = document.querySelector('.result__news-container');
     const newCard = this.createBaseCard();
     const card = newCard.querySelector('.result__item');
     const link = card.querySelector('.link');
@@ -23,7 +22,6 @@ export default class HomeCard extends Card{
     figureItem.classList.add('result__item-save');
     figureItem.classList.add('result__item-save_theme_inaktive');
     figure.append(figureItem);
-    container.append(card);
     
     link.href = url;
     card.querySelector('.result__key').textContent = key;
@@ -34,7 +32,9 @@ export default class HomeCard extends Card{
     card.querySelector('.result__source').textContent = source.name;
     if (!localStorage.getItem('token')) {
       card.querySelector('.result__hint').classList.add('is-opened');
+      figureItem.setAttribute('disabled', 'true');
     }
+    return card;
   }
   funcCard(event) {
     if(event.target.closest('.result__item-save')) {

@@ -1,6 +1,7 @@
 import ErrorValidate from './ErrorValidate';
 import buttonInactive from '../utils/button-inactive';
 import buttonActive from '../utils/button-active';
+
 export default class Validate extends ErrorValidate {
   constructor(input) {
     super(input);

@@ -10,11 +10,14 @@ export default class Result {
   addNotFoundResult() {
     document.querySelector('#notFoundResult').classList.add('is-opened');
   }
+  delNotFoundResult() {
+    document.querySelector('#notFoundResult').classList.remove('is-opened');
+  }
   addCathResult() {
     document.querySelector('#cathResult').classList.add('is-opened');
   }
   delCathResult() {
-    document.querySelector('#cathResult').classList.add('is-opened');
+    document.querySelector('#cathResult').classList.remove('is-opened');
   }
   addButton() {
     document.querySelector('.result__button').classList.add('is-opened');

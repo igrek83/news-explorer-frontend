@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="desciption" content="News Explorer - поиск новостей по агрегаторам новостей в Интернет-СМИ">
+    <meta name="description" content="News Explorer - поиск новостей в Интернет-СМИ">
     <meta name="author" content="Игорь Голанов">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
     <link rel="shortcut icon" href="<%=require(`../images/favicon.ico`).default%>" type="image/x-icon">
@@ -80,14 +80,15 @@
                 </div>
             </header>
             <section class="search">
-                <div class="search__container">
+                <form name="search" class="search__container" novalidate>
                     <h1 class="search__title">Что в мире творится?</h1>
-                    <p class="search__description text text_color_white">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
-                    <form name="search" class="search__form" novalidate>
-                       <input name="searchNews" id="searchInput" type="text" placeholder="Введите тему новости" minlength="2" class="search__input" required>
+                    <label for="searchInput" class="search__description text text_color_white">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</label>
+                    <div class="search__form">
+                       <input name="searchInput" id="searchInput" type="text" placeholder="Введите тему новости" minlength="2" class="search__input" required>
+                       <span class="search__error popup__input-error"></span>
                        <button type="submit" class="button button_color_gray search__button text" disabled>Искать</button>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </section>
         </div>
         <main class="main">
@@ -120,19 +121,21 @@
             <section class="about">
                 <div class="about__block">
                     <picture class="about__image">
-                        <source srcset="<%=require(`../images/foto.jpg`).default%>" media="(min-width: 1071px)">
-                        <source srcset="<%=require(`../images/foto-2.jpg`).default%>" media="(min-width: 700px)">
-                        <source srcset="<%=require(`../images/foto.jpg`).default%>" media="(min-width: 500px)">   
-                        <source srcset="<%=require(`../images/foto-3.jpg`).default%>" media="(min-width: 1px)"> 
-                        <img src="<%=require(`../images/foto.jpg`).default%>" alt="фотография автора">
+                        <source srcset="<%=require(`../images/avtor.jxr`).default%>" class="about__avtor-image" type="image/vnd.ms-photo">
+                        <source srcset="<%=require(`../images/avtor.jp2`).default%>" class="about__avtor-image" type="image/jp2">
+                        <source srcset="<%=require(`../images/avtor.webp`).default%>" class="about__avtor-image" type="image/webp">   
+                        <img src="<%=require(`../images/avtor.jpg`).default%>" alt="фотография автора" class="about__avtor-image">
                     </picture>
                     <div class="about__container">
                         <h2 class="about__title">Об авторе</h2>
-                        <p class="about__description text text_color_black">Это блок с описанием автора проекта. Здесь следует указать, 
-                            как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+                        <p class="about__description text text_color_black"> 
+                            Меня зовут Игорь Голанов. Я - frontend-разработчик. Данное приложение создано мной для поиска новостей по Интернет-СМИ. 
+                            Введя ключевое слово или фразу, здесь можно найти новости за последние 7 дней. А пройдя быструю регистрацию, 
+                            можно сохранять их в личном кабинете для последующего просмотра.
                         </p>
-                        <p class="about__description text text_color_black">Также можно рассказать о процессе обучения в Практикуме, 
-                            чему вы тут научились, и чем можете помочь потенциальным заказчикам.
+                        <p class="about__description text text_color_black">
+                            Фронтенд часть проекта реализована с использованием HTML, CSS и нативного JavaScript.    
+                            а его серверная часть - на Node.js, с использованием фреймворка Express.js в связке с БД MongoDB. 
                         </p>
                     </div>
                 </div>    
@@ -140,7 +143,7 @@
         </main>
         <footer class="footer">
             <div class="footer__container">
-                <p class="footer__copyright">© 2020 Supersite, Powered by News API</p>
+                <p class="footer__copyright">© 2020 Игорь Голанов, Powered by News API</p>
                 <div class="footer__mini-container">
                     <ul class="footer__block">
                         <li class="text text_color_black">
@@ -154,8 +157,8 @@
                         <a href="https://github.com/igrek83" rel="noopener" target="_blank" class="link">
                             <img src="<%=require(`../images/github.svg`).default%>" alt="github" class="footer__social-icon">
                         </a>
-                        <a href="https://ru-ru.facebook.com/" rel="noopener" target="_blank" class="link">
-                            <img src="<%=require(`../images/fb.svg`).default%>" alt="facebook" class="footer__social-icon">
+                        <a href="https://vk.com/igrek83" rel="noopener" target="_blank" class="link">
+                            <img src="<%=require(`../images/vk.svg`).default%>" alt="vk" class="footer__social-icon">
                         </a>
                     </div>
                 </div>

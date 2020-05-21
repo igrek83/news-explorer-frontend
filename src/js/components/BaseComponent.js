@@ -2,12 +2,12 @@ export default class BaseComponent {
   constructor() {
     this.handlers = [];
   }
-  _setHandlers(listener) {
-    this._pushListener(listener);
+  _setHandlers(listeners) {
+    this._pushListener(listeners);
     this._addEventListener();
   }
-  _pushListener(listener) {
-    listener.forEach(({ element, event, callback }) => {
+  _pushListener(listeners) {
+    listeners.forEach(({ element, event, callback }) => {
       const bindCallback = callback.bind(this);
       this.handlers.push({ element, event, bindCallback });
     });
